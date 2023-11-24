@@ -1,0 +1,34 @@
+* {
+  text-decoration: none;
+}
+nav {
+  background-color: teal;
+  height: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.left-section {
+  flex: 2;
+  margin-left: 400px;  
+}
+.logo {
+  font-size: 20px;
+  font-family: 500;
+  padding-right: 50px;
+  color: white;
+}
+.right-section {
+  flex: 1;
+}
+.text {
+  padding: 20px;
+  font-size: 17px;
+  color: white;
+}
+form div {
+  height: 50px;
+}

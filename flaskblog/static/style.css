@@ -1,0 +1,59 @@
+.maincontainer {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-top: 70px;
+    padding: 20px;
+    flex-direction: column;
+}
+.maindiv {
+    max-width: 500px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.fieldset {
+    margin-bottom: 20px;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.link {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .link a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .link a:hover {
+    text-decoration: underline;
+  }
+  .accountclass {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .accountimageclass {
+    border-radius: 50%; /* Makes the image round */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .accountclass div {
+    display: inline-block;
+    vertical-align: top; /* Aligns content to the top */
+    margin-left: 20px; /* Adds space between image and text */
+  }
