@@ -40,9 +40,15 @@ input[type='password'] {
   .link a:hover {
     text-decoration: underline;
   }
+  .accountdiv {
+    height: 500px;
+    width: 600px;
+    margin-left: 500px;
+    margin-top: 20px;
+  }
   .accountclass {
     display: inline-block;
-    margin: 20px;
+    margin-bottom: 20px;
   }
 
   .accountimageclass {
@@ -57,3 +63,146 @@ input[type='password'] {
     vertical-align: top; /* Aligns content to the top */
     margin-left: 20px; /* Adds space between image and text */
   }
+  .homediv-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .homediv {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 650px;
+    height: 250px;
+    border: 1px solid rgb(231, 226, 226);
+  }
+  .homedivdetails {
+    display: flex;
+    align-items: center;
+    /* Add any other styles needed for your layout */
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .user-details a {
+    text-decoration: none;
+    color: rgb(38, 38, 189); /* Set your desired text color */
+    font-weight: bold; /* Optionally make the username bold */
+    margin-bottom: 10px;
+    /* Add any other styles for the username */
+  }
+  
+  .user-details > p {
+    margin-top: 30px; /* Add space between username and date */
+    /* Add any other styles for the date */
+  }
+  .custom-hr {
+    border: none;
+    border-top: 1px solid rgb(231, 226, 226);
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .pagination {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pagination a.current-page {
+    background-color: rgb(0, 187, 255);
+    color: white;
+  }
+  .homedivpost {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 650px;
+    height: 400px;
+    border: 1px solid rgb(231, 226, 226);
+}
+.action-links {
+  display: inline-block;
+}
+
+.action-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.action-links a.update-link {
+  background-color: blue;
+  color: white;
+}
+
+.action-links a.delete-link {
+  background-color: red;
+  color: white;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: red;
+}
+
+.submit-button {
+  margin-top: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 150px; /* Set a specific height for the textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4c5baf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
