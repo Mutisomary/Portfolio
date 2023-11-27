@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="maincontainer">
+  <div class="maindiv">
+    <form method="POST" action="">
+      {{ form.hidden_tag() }}
+      <h1>Reset Password</h1>
+      <div class="fieldset">
+        {{ form.password.label }} <br />
+        {{ form.password() }} <br />
+        {% for error in form.password.errors %}
+        <span style="color: red">[{{ error }}]</span>
+        {% endfor %}
+      </div>
+      <div class="fieldset">
+        {{ form.confirm_password.label }} <br />
+        {{ form.confirm_password() }} <br />
+        {% for error in form.confirm_password.errors %}
+        <span style="color: red">[{{ error }}]</span>
+        {% endfor %}
+      </div>
+      <div>
+        {{ form.submit() }}
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

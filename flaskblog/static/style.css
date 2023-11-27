@@ -52,16 +52,16 @@ input[type='password'] {
   }
 
   .accountimageclass {
-    border-radius: 50%; /* Makes the image round */
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
   }
 
   .accountclass div {
     display: inline-block;
-    vertical-align: top; /* Aligns content to the top */
-    margin-left: 20px; /* Adds space between image and text */
+    vertical-align: top; 
+    margin-left: 20px; 
   }
   .homediv-container {
     display: flex;
@@ -79,7 +79,6 @@ input[type='password'] {
   .homedivdetails {
     display: flex;
     align-items: center;
-    /* Add any other styles needed for your layout */
   }
   
   .user-details {
@@ -90,15 +89,13 @@ input[type='password'] {
   
   .user-details a {
     text-decoration: none;
-    color: rgb(38, 38, 189); /* Set your desired text color */
-    font-weight: bold; /* Optionally make the username bold */
+    color: rgb(38, 38, 189);
+    font-weight: bold;
     margin-bottom: 10px;
-    /* Add any other styles for the username */
   }
   
   .user-details > p {
-    margin-top: 30px; /* Add space between username and date */
-    /* Add any other styles for the date */
+    margin-top: 30px;
   }
   .custom-hr {
     border: none;
@@ -193,8 +190,8 @@ textarea {
 }
 
 textarea {
-  height: 150px; /* Set a specific height for the textarea */
-  resize: vertical; /* Allow vertical resizing */
+  height: 150px;
+  resize: vertical;
 }
 
 /* Style for submit button */
