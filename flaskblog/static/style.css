@@ -73,7 +73,7 @@ input[type='password'] {
     margin-left: 10px;
     padding: 10px;
     width: 650px;
-    height: 250px;
+    height: 270px;
     border: 1px solid rgb(231, 226, 226);
   }
   .homedivdetails {
@@ -128,12 +128,17 @@ input[type='password'] {
     color: white;
   }
   .homedivpost {
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 10px;
-    width: 650px;
-    height: 400px;
+    margin: auto;
+    padding: 20px;
+    width: 900px;
+    height: 100%;
     border: 1px solid rgb(231, 226, 226);
+}
+.homedivpost p {
+  /* Apply the desired text behavior properties to paragraphs within homedivpost */
+  word-wrap: break-word;
+  white-space: pre-line;
+  line-height: 1.5;
 }
 .action-links {
   display: inline-block;
@@ -160,38 +165,31 @@ input[type='password'] {
 
 .form-container {
   max-width: 900px;
-  margin: 0 auto;
+  height: 500px;
+  margin: 25px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
-
 .form-group {
   margin-bottom: 15px;
 }
-
+.form-content {
+  width: 900px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.formcontent-submit {
+  margin-top: 265px;
+}
 .error-message {
   color: red;
 }
 
 .submit-button {
   margin-top: 10px;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 5px;
-}
-
-textarea {
-  height: 150px;
-  resize: vertical;
 }
 
 /* Style for submit button */

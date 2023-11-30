@@ -1,5 +1,5 @@
 {% extends 'layout.html' %} {% block content %}
-<h1 style="margin-left: 30px;">Posts by {{ user.username }} ({{ posts.total }})</h1>
+<h1 style="margin-left: 100px;">Posts by {{ user.username }} ({{ posts.total }})</h1>
 <div class="homediv-container">
   {% for post in posts.items %}
     <div class="homediv">
@@ -12,7 +12,7 @@
       </div>
       <div>
         <p><h2><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2></p>
-        <p>{{ post.content }}</p>
+        <p>{{ post.content[:200] }}{% if post.content|length > 200 %}... <a href="{{ url_for('post', post_id=post.id) }}">Read More</a>{% endif %}</p>
       </div>
     </div>
   {% endfor %}

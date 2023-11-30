@@ -12,7 +12,7 @@
       <hr class="custom-hr">
       <div>
         <p><h2><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2></p>
-        <p>{{ post.content }}</p>
+        <p>{{ post.content[:200] }}{% if post.content|length > 200 %}... <a href="{{ url_for('post', post_id=post.id) }}">Read More</a>{% endif %}</p>
       </div>
     </div>
   {% endfor %}
