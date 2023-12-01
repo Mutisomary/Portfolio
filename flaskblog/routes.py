@@ -208,3 +208,15 @@ def search_results():
     pagination = search_results.paginate(page=page, per_page=10)  # Change per_page as needed
 
     return render_template('search_results.html', query=query, results=search_results, pagination=pagination)
+
+@app.errorhandler(404)
+def not_found_error(error):
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template('500.html'), 500
+
+@app.errorhandler(403)
+def not_found_error(error):
+    return render_template('403.html'), 403

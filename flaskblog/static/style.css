@@ -249,3 +249,7 @@ input[type="submit"] {
   display: flex;
   align-items: center;
 }
+.error_handling {
+  margin-left: 200px;
+  margin-top: 50px;
+}
