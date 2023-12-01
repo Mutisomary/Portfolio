@@ -1,5 +1,11 @@
 {% extends 'layout.html' %} {% block content %}
-<h1 style="margin-left: 100px;">Posts by {{ user.username }} ({{ posts.total }})</h1>
+<div class="header-container">
+  <h1 class="header-text">Posts by {{ user.username }} ({{ posts.total }})</h1>
+  <form class="search-form" action="{{ url_for('search_results') }}" method="GET">
+      <input type="text" name="query" placeholder="Search by Title...">
+      <button type="submit">Search</button>
+  </form>
+</div>
 <div class="homediv-container">
   {% for post in posts.items %}
     <div class="homediv">

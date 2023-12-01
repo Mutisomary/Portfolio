@@ -1,0 +1,38 @@
+<!-- search_results.html -->
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="homediv-container">
+    {% for post in results %}
+        <!-- Your post display logic here -->
+        <!-- For example: -->
+        <div class="homediv">
+            <div class="homedivdetails">
+              <img class="accountimageclass" src="{{ url_for('static', filename='images/' + post.author.image_file) }}" />
+              <div class="user-details">
+                <a href="{{ url_for('user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
+                {{ post.date_posted.strftime('%Y-%m-%d') }}
+              </div>
+            </div>
+            <hr class="custom-hr">
+            <div>
+              <p><h2><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2></p>
+              <p>{{ post.content[:200] }}{% if post.content|length > 200 %}... <a href="{{ url_for('post', post_id=post.id) }}">Read More</a>{% endif %}</p>
+            </div>
+          </div>
+    {% endfor %}
+</div>
+<div class="pagination">
+    {% for page_num in pagination.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+        {% if page_num %}
+            {% if pagination.page == page_num %}
+                <a href="{{ url_for('search_results', query=query, page=page_num) }}" class="current-page">{{ page_num }}</a>
+            {% else %}
+                <a href="{{ url_for('search_results', query=query, page=page_num) }}">{{ page_num }}</a>
+            {% endif %}
+        {% else %}
+            <span class="ellipsis">...</span>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock content %}

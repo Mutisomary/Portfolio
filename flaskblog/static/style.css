@@ -75,7 +75,7 @@ input[type='password'] {
     margin-top: 20px;
     margin-left: 10px;
     padding: 10px;
-    width: 650px;
+    width: 700px;
     height: 270px;
     border: 1px solid rgb(231, 226, 226);
   }
@@ -203,4 +203,49 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 10px 300px ;
+  width: 400px;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust the space between elements */
+  margin-bottom: 20px;
+}
+
+/* Style for the header */
+.header-text {
+  margin-left: 100px;
+}
+
+/* Style for the search form */
+.search-form {
+  display: flex;
+  align-items: center;
 }

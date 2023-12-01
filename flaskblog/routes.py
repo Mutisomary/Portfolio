@@ -195,3 +195,16 @@ def reset_token(token):
         flash('Your password has been updated! You are now able to log in', 'success')
         return redirect(url_for('login'))
     return render_template('reset_token.html', title='Reset Password', form=form)
+
+@app.route('/search_results', methods=['GET'])
+def search_results():
+    query = request.args.get('query')  # Get the search query from the URL parameters
+    page = request.args.get('page', 1, type=int)  # Get the requested page number
+
+    # Filter posts based on the search query (replace this with your search logic)
+    search_results = Post.query.filter(Post.title.ilike(f"%{query}%"))
+
+    # Paginate the search results
+    pagination = search_results.paginate(page=page, per_page=10)  # Change per_page as needed
+
+    return render_template('search_results.html', query=query, results=search_results, pagination=pagination)

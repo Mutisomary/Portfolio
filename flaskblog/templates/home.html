@@ -1,4 +1,8 @@
-{% extends 'layout.html' %} {% block content %} 
+{% extends 'layout.html' %} {% block content %}
+<form class="search-form" action="{{ url_for('search_results') }}" method="GET">
+  <input type="text" name="query" placeholder="Search by Title...">
+  <button type="submit">Search</button>
+</form> 
 <div class="homediv-container">
   {% for post in posts.items %}
     <div class="homediv">
