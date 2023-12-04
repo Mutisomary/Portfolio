@@ -37,7 +37,8 @@ input[type='password'] {
   }
   .link a {
     text-decoration: none;
-    color: #007bff;
+    color: teal;
+    margin-left: 8px;
   }
 
   .link a:hover {
@@ -91,14 +92,21 @@ input[type='password'] {
   }
   
   .user-details a {
+    padding-top: 20px;
     text-decoration: none;
-    color: rgb(38, 38, 189);
+    color: blue;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
   .user-details > p {
     margin-top: 30px;
+  }
+
+  .date {
+    color: blue;
+    font-size: 18px;
+    font-weight: 500;
   }
   .custom-hr {
     border: none;
@@ -127,7 +135,7 @@ input[type='password'] {
   }
   
   .pagination a.current-page {
-    background-color: rgb(0, 187, 255);
+    background-color: teal;
     color: white;
   }
   .homedivpost {
@@ -157,7 +165,7 @@ input[type='password'] {
 }
 
 .action-links a.update-link {
-  background-color: blue;
+  background-color: teal;
   color: white;
 }
 
@@ -198,7 +206,7 @@ input[type='password'] {
 /* Style for submit button */
 input[type="submit"] {
   padding: 10px 20px;
-  background-color: #4c5baf;
+  background-color: teal;
   color: white;
   border: none;
   border-radius: 4px;
@@ -223,13 +231,13 @@ input[type="submit"] {
   padding: 8px 15px;
   border-radius: 4px;
   border: none;
-  background-color: #007bff;
+  background-color: teal;
   color: white;
   cursor: pointer;
 }
 
 .search-form button:hover {
-  background-color: #0056b3;
+  background-color: rgb(89, 150, 150);
 }
 
 .header-container {
@@ -252,4 +260,17 @@ input[type="submit"] {
 .error_handling {
   margin-left: 200px;
   margin-top: 50px;
+}
+
+.error-link {
+  color: teal;
+}
+
+h2 a.teal-title {
+  color: rgb(41, 41, 158);
+  font-weight: 700;
+}
+.flashed_messages {
+  margin-left: 500px;
+  margin-top: 40px;
 }

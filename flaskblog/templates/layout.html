@@ -44,11 +44,11 @@
     </nav>
     <div>
       {% with messages = get_flashed_messages() %} {% if messages %}
-      <ul>
+      <p class="flashed_messages">
         {% for message in messages %}
-        <li>{{ message }}</li>
+          {{ message }}
         {% endfor %}
-      </ul>
+      </p>
       {% endif %} {% endwith %} {% block content %} {% endblock %}
     </div>
   </body>
