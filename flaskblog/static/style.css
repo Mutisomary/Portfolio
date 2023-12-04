@@ -262,15 +262,10 @@ input[type="submit"] {
   margin-top: 50px;
 }
 
-.error-link {
-  color: teal;
-}
-
 h2 a.teal-title {
   color: rgb(41, 41, 158);
   font-weight: 700;
 }
 .flashed_messages {
   margin-left: 500px;
-  margin-top: 40px;
 }
