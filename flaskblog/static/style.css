@@ -1,5 +1,8 @@
 body {
-  background: linear-gradient(to right, #f8f8f8, #f5f5f5);
+  background: #B2EBF2;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  font-family: roboto, sans-serif;
 }
 .maincontainer {
     display: flex;
@@ -27,6 +30,7 @@ input[type='password'] {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-family: roboto;
 }
 
 .link {
@@ -77,7 +81,7 @@ input[type='password'] {
     margin-left: 10px;
     padding: 10px;
     width: 700px;
-    height: 270px;
+    height: 300px;
     border: 1px solid rgb(231, 226, 226);
   }
   .homedivdetails {
@@ -94,8 +98,9 @@ input[type='password'] {
   .user-details a {
     padding-top: 20px;
     text-decoration: none;
-    color: blue;
     font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
   }
   
@@ -104,7 +109,6 @@ input[type='password'] {
   }
 
   .date {
-    color: blue;
     font-size: 18px;
     font-weight: 500;
   }
@@ -191,6 +195,9 @@ input[type='password'] {
   height: 300px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 .formcontent-submit {
   margin-top: 265px;
@@ -263,7 +270,8 @@ input[type="submit"] {
 }
 
 h2 a.teal-title {
-  color: rgb(41, 41, 158);
+  letter-spacing: 1px;
+  font-size: 25px;
   font-weight: 700;
 }
 .flashed_messages {

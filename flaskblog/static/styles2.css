@@ -1,30 +1,40 @@
-/* Example CSS */
+
 .landing-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    height: 600px;
-}
-
-.content {
-    flex: 1;
-    margin-right: 100px; /* Adjust spacing between content and image */
-}
-.content h1 {
-    color: navy; /* Color of your choice */
-    letter-spacing: 2px; /* Adjust letter spacing as desired */
-    font-weight: 700; /* Make the text bold */
-    font-size: 32px;
-    cursor: pointer;
-}
-.content h1:hover {
-    color: blue;
-}
-.content p {
+    height: 700px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin-top: 20px;
+  }
+  .content p {
     font-size: 25px;
-    margin-top: 10px;
-    color: rgb(36, 36, 183);
+  }
+  
+  .text-ld {
+    width: 65%;
+    font-size: 25px;
+  }
+  
+  .image {
+    margin-right: 40px;
+    margin-left: 50px;
+    width: 35%;
+  }
+  #welcome-text {
+    margin-right: auto;
+    margin-left: 450px;
+    font-size: 50px;
+    color: teal;
+    letter-spacing: 3px;  
 }
 
 .custom-button {
@@ -48,27 +58,10 @@
     opacity: 1; 
 }
 
-.custom-button a:hover {
-    opacity: 0.5;
-}
-
-.image {
-    flex: 1;
-}
-
-.image img {
-    margin-top: 50px;
-    max-width: 700px; /* Ensure image doesn't overflow its container */
-    border-radius: 10px;
-    height: auto;
-    display: block;
-}
-
 /* Example CSS */
 .contact-section {
     margin-top: 50px;
     text-align: center;
-    font-family: 'Arial', sans-serif; /* Change to your preferred font */
 }
 
 .contact-section h2 {
@@ -80,7 +73,7 @@
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between icons */
+    gap: 50px; /* Space between icons */
 }
 
 .social-icons a {
@@ -88,6 +81,6 @@
 }
 
 .social-icons img {
-    width: 60px; /* Adjust the size of the icons */
+    width: 40px; /* Adjust the size of the icons */
     height: auto; /* Maintain aspect ratio */
 }
