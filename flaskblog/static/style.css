@@ -150,7 +150,6 @@ input[type='password'] {
     border: 1px solid rgb(231, 226, 226);
 }
 .homedivpost p {
-  /* Apply the desired text behavior properties to paragraphs within homedivpost */
   word-wrap: break-word;
   white-space: pre-line;
   line-height: 1.5;

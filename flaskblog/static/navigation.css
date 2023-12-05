@@ -32,3 +32,41 @@ nav {
 form div {
   height: 50px;
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .left-section {
+    margin: 0;
+    text-align: center;
+  }
+  .right-section {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .logo {
+    padding: 10px 0;
+  }
+  .text {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+  .text {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .right-section {
+    text-align: center;
+  }
+  .text {
+    display: block;
+    padding: 10px 0;
+  }
+}

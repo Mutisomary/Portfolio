@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 800px; /* Adjust the maximum width as needed */
+    max-width: 800px;
     margin-top: 20px;
   }
   .content p {
@@ -31,7 +31,7 @@
   }
   #welcome-text {
     margin-right: auto;
-    margin-left: 450px;
+    margin-left: 350px;
     font-size: 50px;
     color: teal;
     letter-spacing: 3px;  
@@ -54,33 +54,47 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    transition: opacity 0.3s ease; /* Adding a transition effect */
-    opacity: 1; 
 }
 
-/* Example CSS */
 .contact-section {
     margin-top: 50px;
     text-align: center;
 }
 
 .contact-section h2 {
-    font-family: 'Verdana', sans-serif; /* Different font for h2 */
-    font-size: 28px; /* Adjust size as needed */
-    margin-bottom: 20px; /* Space below h2 */
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Space between icons */
+    gap: 50px;
 }
 
 .social-icons a {
-    display: block; /* Ensures each link takes up the full width */
+    display: block;
 }
 
 .social-icons img {
-    width: 40px; /* Adjust the size of the icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 40px;
+    height: auto;
 }
+
+footer {
+    background-color: teal;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container p {
+    margin: 0;
+    font-size: 17px;
+    color: white
+  }
