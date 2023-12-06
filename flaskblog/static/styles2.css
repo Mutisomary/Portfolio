@@ -94,7 +94,7 @@ footer {
   }
   
   .footer-container p {
-    margin: 0;
+    margin-top: 0;
     font-size: 17px;
     color: white
   }
