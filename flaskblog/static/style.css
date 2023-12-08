@@ -75,7 +75,7 @@ input[type='password'] {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    height: 700pxs;
+    height: 700px;
   }
   .homediv {
     margin-top: 20px;
