@@ -66,15 +66,15 @@ Users can sort the blogs by date, category, or popularity.
 Specific Blogs:
 
 ### Contributing
-Fork the repository and clone it to your local machine
+* Fork the repository and clone it to your local machine
 
-Create a new branch for your feature or bug fix
+* Create a new branch for your feature or bug fix
 
-Make changes and test thoroughly
+* Make changes and test thoroughly
 
-Commit changes and push to the branch.
+* Commit changes and push to the branch.
 
-Create a Pull Request detailing your changes
+* Create a Pull Request detailing your changes
 
 ### Acknowledgments
 We would like to express our gratitude to the contributers for their contributions, support and inspiritaion for this project.
