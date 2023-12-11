@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="landing-section">
+    <h1 id="welcome-text" class="hidden">Welcome to Science Spot</h1>
+    <div class="content">
+        <div class="text-ld">
+            <p>Exploring the wonders of scientific innovation, one discovery at a time.</p>
+            <p>At Science Spot, we're more than a place for science talk. We transform amazing discoveries into captivating stories that spark your interest.<br>
+                We share science in fun and engaging stories that everyone can enjoy. Join us, share your stories, and dive into the incredible world of science together!
+            </p>
+            <div class="custom-button">
+                <a href="{{ url_for('register') }}" class="button">Get Started</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/landing.jpg') }}" alt="Landing page Image">
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="social-icons">
+        <a><img src="{{ url_for('static', filename='images/github.png') }}" alt="github image"></a>
+        <a><img src="{{ url_for('static', filename='images/LinkedIn.png') }}" alt="LinkedIn image"></a>
+        <a><img src="{{ url_for('static', filename='images/twitter.png') }}" alt="Twitter image"></a>
+        <a><img src="{{ url_for('static', filename='images/instagram.jpg') }}" alt="Instagram image"></a>
+    </div>
+</section>
+{% endblock %}
