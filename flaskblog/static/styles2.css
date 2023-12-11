@@ -102,3 +102,10 @@ footer {
   .error_handling {
     height: 600px;
   }
+  .error_handling a {
+    color: blue;
+    font-weight: 800;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
