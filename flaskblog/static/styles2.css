@@ -98,3 +98,7 @@ footer {
     font-size: 17px;
     color: white
   }
+
+  .error_handling {
+    height: 600px;
+  }
