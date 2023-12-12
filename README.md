@@ -20,7 +20,11 @@ Sort and filter by title.
 1. Specific Blogs:
 Access individual blog posts directly through unique URLs.
 
-### Accessing SceinceSpot
+### Accessing ScienceSpot
+[Visit our website](https://fullmang.pythonanywhere.com/home)
+
+Alternatively;
+
 ###### Prerequisites
  Ensure you have Python and pip installed on your system
 1. clone the repository
