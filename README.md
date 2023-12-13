@@ -23,7 +23,7 @@ Access individual blog posts directly through unique URLs.
 ### Accessing ScienceSpot
 [Visit our website](https://fullmang.pythonanywhere.com/home)
 
-Alternatively;
+Alternatively if you want to access locally;
 
 ###### Prerequisites
  Ensure you have Python and pip installed on your system
