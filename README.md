@@ -51,7 +51,7 @@ Alternatively if you want to access locally;
     set FLASK_APP=run.py
     flask run
 ```
-6. Open your browser and navigate to https://localhost:5000 and now you can access it from there.
+6. Open your browser and navigate to https://localhost:5000 and access it from there.
 
 ### Interacting with the Web Application
 Home Page:
