@@ -4,15 +4,13 @@
     flex-direction: column;
     align-items: center;
     max-width: 1200px;
-    height: 700px;
   }
   
   .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 800px;
+    width: 800px;
     margin-top: 20px;
   }
   .content p {
@@ -27,9 +25,10 @@
   .image {
     margin-right: 40px;
     margin-left: 50px;
-    width: 35%;
+    max-width: 35%;
   }
   #welcome-text {
+    margin-top: 50px;
     margin-right: auto;
     margin-left: 350px;
     font-size: 50px;
@@ -89,7 +88,6 @@ footer {
   }
   
   .footer-container {
-    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -108,4 +106,33 @@ footer {
     text-decoration: underline;
     letter-spacing: 1px;
     font-size: 20px;
+  }
+  @media only screen and (max-width: 786px) {
+    .landing-section {
+      margin: 4px;
+    }
+    #welcome-text {
+      font-size: 27px;
+      margin: 10px auto;
+    }
+    .content {
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: center; /* Center items vertically */
+    }
+    .text-ld {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .custom-button {
+      margin: 10px auto; /* Center button horizontally */
+    }
+    .image {
+      margin: 0 auto; /* Remove margins */
+      max-width: 100%; /* Set maximum width to 100% to ensure it fits within the container */
+      max-height: 100%;
+    }
+    .image img {
+      width: 100%;
+    }
   }

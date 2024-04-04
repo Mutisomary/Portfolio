@@ -1,72 +1,80 @@
 * {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 nav {
   background-color: teal;
-  height: 50px;
-}
-.container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding-top: 15px;
-}
-.left-section {
-  flex: 2;
-  margin-left: 400px;  
+  align-items: center;
+  padding: 15px;
 }
 .logo {
-  font-size: 20px;
-  font-family: 500;
-  padding-right: 50px;
-  color: white;
+  padding: 10px;
+  position: absolute;
+  left: 3px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
 }
-.right-section {
-  flex: 1;
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
-.text {
-  padding: 20px;
-  font-size: 17px;
-  color: white;
+.navbar li {
+  text-decoration: none;
+  margin-right: 20px;
 }
-form div {
-  height: 50px;
+.navbar li a {
+  color: #fff;
 }
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
+#icon {
+  display: none;
+}
+#menu-icon {
+  display: none;
+}
+@media only screen and (max-width: 786px) {
+  nav {
+    height: 30px;
+  }
+  .navbar {
     flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    width: 250px;
+    align-items: center;
   }
-  .left-section {
-    margin: 0;
-    text-align: center;
+  .navbar li {
+    margin: 10px;
   }
-  .right-section {
-    margin-top: 10px;
-    text-align: center;
+  .navbar li a {
+    color: #000;
+    font-size: 20px;
   }
-  .logo {
-    padding: 10px 0;
+  
+  #menu-icon {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
   }
-  .text {
-    padding: 10px 20px;
-    font-size: 15px;
+  
+  #icon:checked + label ~ .navbar {
+    top: 60px;
   }
 }
 
-@media (max-width: 480px) {
-  .logo {
-    font-size: 18px;
-  }
-  .text {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-  .right-section {
-    text-align: center;
-  }
-  .text {
-    display: block;
-    padding: 10px 0;
-  }
+
+form div {
+  height: 50px;
 }
