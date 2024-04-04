@@ -5,13 +5,15 @@ body {
   font-family: roboto, sans-serif;
 }
 .maincontainer {
+    width: 500px;
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    margin: 30px auto;       
     padding: 20px;
     flex-direction: column;
 }
 .maindiv {
+    width: 500px;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -251,12 +253,6 @@ input[type="submit"] {
 .header-text {
   margin: 20px auto;
 }
-
-/* Style for the search form */
-.search-form {
-  display: flex;
-  align-items: center;
-}
 .error_handling {
   margin-left: 200px;
   margin-top: 50px;
@@ -271,6 +267,12 @@ h2 a.teal-title {
   margin-left: 500px;
 }
 @media only screen and (max-width: 786px) {
+  .maincontainer {
+    width: 350px;
+  }
+  .maindiv {
+    width: 350px;
+  }
   .homedivpost {
     width: 100%;
   }
